@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ToolGrid } from './components/ToolGrid';
 import { HowItWorks, PrivacyBanner, FAQ, Footer } from './components/Sections';
-import { AdSlot } from './components/AdSlot';
 import type { Tool, ToolId } from './lib/types';
 import {
   MergeTool,
@@ -58,12 +57,9 @@ function App() {
       <main>
         <Hero onCta={scrollToTools} />
         <ToolGrid onOpen={openTool} />
-        <AdSlot variant="banner" className="-mt-6 mb-4 px-4" />
         <HowItWorks />
-        <AdSlot variant="banner" className="my-4 px-4" />
         <PrivacyBanner />
         <FAQ />
-        <AdSlot variant="native" className="mt-4 mb-8 px-4" />
       </main>
       <Footer />
 
